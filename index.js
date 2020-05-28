@@ -31,7 +31,7 @@ app.post('/login', function (req, res) {
         from: 'brunacarvalho@bcadvocacia.com',
         to: 'fernandoeparanhos@gmail.com',
         subject: req.body.nome,
-        text: `Cliente: ${req.body.conteudo}, telefone: ${req.body.telefone} Mensagem: ${req.body.conteudo} e-mail: ${req.body.email}`
+        text: `telefone: ${req.body.telefone}<br> Mensagem: ${req.body.conteudo}<br> e-mail: ${req.body.email}`
     }
     transporter.sendMail(mailOptions, function(err, info){
         if(err){
