@@ -29,7 +29,7 @@ app.post('/login', function (req, res) {
     console.log('Body ===>', req.body);
     var mailOptions = {
         from: 'site@bcadvocacia.com',
-        to: 'brunacarvalho@bcadvocacia.com',
+        to: 'bruna.carvalho@bcadvocacia.com',
         subject: 'Contato BCADVOCACIA',
         text: ` Telefone: ${req.body.telefone}\n Mensagem: ${req.body.conteudo}\n E-mail: ${req.body.email}`
     }
