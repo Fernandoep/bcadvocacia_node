@@ -15,7 +15,7 @@ var transporter = nodemailer.createTransport({
     port: 587,
     secure: false,
     auth: {
-        user: 'brunacarvalho@bcadvocacia.com',
+        user: 'site@bcadvocacia.com',
         pass: 'paranhos2020'
    }
 });
@@ -28,7 +28,7 @@ app.get('/', (req, res) => res.send('servidor rodando'));
 app.post('/login', function (req, res) {
     console.log('Body ===>', req.body);
     var mailOptions = {
-        from: 'brunacarvalho@bcadvocacia.com',
+        from: 'site@bcadvocacia.com',
         to: 'brunacarvalho@bcadvocacia.com',
         subject: 'Contato BCADVOCACIA',
         text: ` Telefone: ${req.body.telefone}\n Mensagem: ${req.body.conteudo}\n E-mail: ${req.body.email}`
