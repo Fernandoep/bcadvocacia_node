@@ -16,7 +16,7 @@ var transporter = nodemailer.createTransport({
     secure: false,
     auth: {
         user: 'site@bcadvocacia.com',
-        pass: 'paranhos2020'
+        pass: 'paranhos@!@#$1!PP'
    }
 });
 
